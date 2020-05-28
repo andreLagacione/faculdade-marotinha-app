@@ -1,3 +1,4 @@
+import 'package:faculdademarotinhaapp/commons/cardShowData.dart';
 import 'package:flutter/material.dart';
 
 class AlunoLista extends StatelessWidget {
@@ -5,7 +6,10 @@ class AlunoLista extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Colors.red,
+        child: Padding(
+          padding: const EdgeInsets.all(15),
+          child: CardShowData(),
+        ),
       ),
     );
   }
