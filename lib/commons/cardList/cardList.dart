@@ -1,13 +1,13 @@
+import 'package:faculdademarotinhaapp/commons/cardList/models/ContentCard.dart';
 import 'package:faculdademarotinhaapp/commons/circleButton/circleButton.dart';
-import 'package:faculdademarotinhaapp/commons/models/CardInfoContent.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class CardShowData extends StatelessWidget {
+class CardList extends StatelessWidget {
 
   final String titleCard;
-  final List<CardInfoCotent> values;
-  CardShowData({this.titleCard, this.values});
+  final List<ContentCard> values;
+  CardList({this.titleCard, this.values});
 
   @override
   Widget build(BuildContext context) {

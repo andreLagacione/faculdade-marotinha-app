@@ -1,4 +1,4 @@
-import 'package:faculdademarotinhaapp/commons/cardShowData.dart';
+import 'package:faculdademarotinhaapp/commons/cardList/cardList.dart';
 import 'package:flutter/material.dart';
 
 class AlunoLista extends StatelessWidget {
@@ -11,11 +11,11 @@ class AlunoLista extends StatelessWidget {
           Column(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              CardShowData(),
-              CardShowData(),
-              CardShowData(),
-              CardShowData(),
-              CardShowData(),
+              CardList(),
+              CardList(),
+              CardList(),
+              CardList(),
+              CardList(),
             ],
           ),
         ],

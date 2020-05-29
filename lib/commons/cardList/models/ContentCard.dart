@@ -1,5 +1,5 @@
-class CardInfoCotent {
+class ContentCard {
   final String name;
   final dynamic value;
-  CardInfoCotent(this.name, this.value);
+  ContentCard(this.name, this.value);
 }
