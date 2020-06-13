@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 class CardList extends StatelessWidget {
 
   final String titleCard;
-  final List<ContentCard> values;
+  final dynamic values;
   CardList({this.titleCard, this.values});
 
   @override
@@ -43,27 +43,28 @@ class CardList extends StatelessWidget {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                if (this.values != null)
-                  for (var i = 0; i < this.values.length; i++)
-                    Row(
-                      children: <Widget>[
-                        Text(
-                          '${values[i].name}: ',
-                          style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold
-                          ),
-                        ),
-                        Text(
-                          '${values[i].value}',
-                          style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.black,
-                          ),
-                        ),
-                      ],
-                    ),
+                Container()
+//                if (this.values != null)
+//                  for (var i = 0; i < this.values.length; i++)
+//                    Row(
+//                      children: <Widget>[
+//                        Text(
+//                          '${values[i].name}: ',
+//                          style: TextStyle(
+//                            fontSize: 14,
+//                            color: Colors.black,
+//                            fontWeight: FontWeight.bold
+//                          ),
+//                        ),
+//                        Text(
+//                          '${values[i].value}',
+//                          style: TextStyle(
+//                            fontSize: 14,
+//                            color: Colors.black,
+//                          ),
+//                        ),
+//                      ],
+//                    ),
               ],
             ),
           ),
