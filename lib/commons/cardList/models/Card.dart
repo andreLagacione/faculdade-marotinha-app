@@ -1,7 +1,7 @@
 import 'package:faculdademarotinhaapp/commons/cardList/models/ContentCard.dart';
 
-class Card {
+class CardItem {
   final String title;
   final List<ContentCard> content;
-  Card(this.title, this.content);
+  CardItem({this.title, this.content});
 }

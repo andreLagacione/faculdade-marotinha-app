@@ -26,7 +26,7 @@ class CardList extends StatelessWidget {
                   color: Colors.blue,
                   padding: const EdgeInsets.all(10),
                   child: Text(
-                    'André Ricardo Lagacione',
+                    this.titleCard,
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
                         fontSize: 16,
@@ -43,28 +43,28 @@ class CardList extends StatelessWidget {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                Container()
-//                if (this.values != null)
-//                  for (var i = 0; i < this.values.length; i++)
-//                    Row(
-//                      children: <Widget>[
-//                        Text(
-//                          '${values[i].name}: ',
-//                          style: TextStyle(
-//                            fontSize: 14,
-//                            color: Colors.black,
-//                            fontWeight: FontWeight.bold
-//                          ),
-//                        ),
-//                        Text(
-//                          '${values[i].value}',
-//                          style: TextStyle(
-//                            fontSize: 14,
-//                            color: Colors.black,
-//                          ),
-//                        ),
-//                      ],
-//                    ),
+//                Container()
+                if (this.values != null)
+                  for (var i = 0; i < this.values.length; i++)
+                    Row(
+                      children: <Widget>[
+                        Text(
+                          '${values[i].name}: ',
+                          style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold
+                          ),
+                        ),
+                        Text(
+                          '${values[i].value}',
+                          style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ],
+                    ),
               ],
             ),
           ),
